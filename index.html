@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="クボタアツシ,AtsushiKubota,Acoustic Guitarist">
+    <meta name="description" content="クボタアツシのオフィシャルサイトです。">
+    <title>クボタアツシ：AtsushiKubota</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img_src/ico.ico">
+    <!--Swiperの読み込み-->
+    <link rel="stylesheet" href="swiper.css">
+    <script src="swiper.js"></script>
+
+    <style>
+        .swiper-container{
+        margin: 30px auto;
+        width: 950px;
+        height: 100px;
+        background-color:rgba(red, green, blue, alpha);
+        }
+    </style>
+
+    <!--画像の切り替わりスクリプト-->
+    <style type="text/css">
+        #photo {
+            width: 960px;
+            height: 450px;
+            margin: 30px auto;
+            text-align: left;
+            overflow: hidden;
+            position: relative;
+        }
+        #photo img {
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+        </style>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript">
+        $(function(){
+            var setImg = '#photo';
+            var fadeSpeed = 1600;
+            var switchDelay = 5000;
+            $(setImg).children('img').css({opacity:'0'});
+            $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+            setInterval(function(){
+                $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+            },switchDelay);
+        });
+        </script>
+</head>
+<body>
+<!--ヘッダー-->
+    <header>
+    <div class="header">
+        <img id="logo" src="img_src/logo.png">
+        <a href="https://twitter.com/atsushikubota" target="_blank"><img id="tw" src="img_src/tw_logo.png"></a>
+        <a href="https://www.facebook.com/kubota652" target="_blank"><img id="fb" src="img_src/f_logo.png"></a>
+        <a href="https://www.youtube.com/user/kubotaatsushiguitar/videos" target="_blank"><img id="yt" src="img_src/yt_logo.png"></a>
+        <!--ハンバーガーメニュー-->
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <div id="nav-margin">
+                <p>NEWS「近況報告」</p>
+                <p>Profile「プロフィール」</p>
+                <p>Single「販売中の曲」</p>
+                <p>Live「スケジュール」</p>
+                <p>メール「お仕事依頼」</p>
+                <p>twitterアカウント</p>
+                <p>facebookアカウント</p>
+                <p>youtubeアカウント</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <a href="http://yahoo.co.jp" target="_blank"><img src="img_src/news.png"></a>
+        <a href="http://google.co.jp" target="_blank"><img src="img_src/profile.png"></a>
+        <a href="http://hoge.com" target="_blank"><img src="img_src/single.png"></a>
+        <a href="http://foo.com" target="_blank"><img src="img_src/live.png"></a>
+    </div>
+    </header>
+
+<!--メインコンテンツ-->
+    <!--TOP画像スライドショー-->
+    <div id="photo">
+        <img src="img_src/960x960.jpg" width="100%" height="100%" alt="">
+        <img src="img_src/476x248.jpg" width="100%" height="100%" alt="">
+        <img src="img_src/peco.jpg" width="100%" height="100%" alt="">
+        <img src="img_src/Parka holic.jpg" width="100%" height="100%" alt="">
+        <img src="img_src/dc.png" width="100%" height="100%" alt="">
+        <img src="img_src/gyouza.gif" width="100%" height="100%" alt="">
+    </div>
+
+    <!--最新情報とスケジュールのタブ-->
+    <div class="tabs">
+        <input id="all" type="radio" name="tab_item" checked>
+        <label class="tab_item" for="all">ツイート</label>
+        <input id="programming" type="radio" name="tab_item">
+        <label class="tab_item" for="programming">Live情報</label>
+        <input id="design" type="radio" name="tab_item">
+        <label class="tab_item" for="design">販促</label>
+        <div class="tab_content" id="all_content">
+            <div class="tab_content_description">
+                <!--全角64文字、半角128文字以内じゃないと表示崩れが起こる-->
+                <p class="c-txtsp">ツイートの内容がここに入ります。ああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                <p class="c-txtsp">ツイートの内容がここに入ります</p>
+                <p class="c-txtsp">ツイートの内容がここに入ります</p>
+                <p class="c-txtsp">ツイートの内容がここに入ります</p>
+                <p class="c-txtsp">ツイートの内容がここに入ります</p>
+                <p class="c-txtsp">ツイートの内容がここに入ります</p>
+                <p class="c-txtsp">ツイートの内容がここに入ります</p>
+                <p class="c-txtsp">ツイートの内容がここに入ります</p>
+                <p class="c-txtsp">ツイートの内容がここに入ります</p>
+                <p class="c-txtsp">ツイートの内容がここに入ります</p>
+                <p class="c-txtsp">ツイートの内容がここに入ります</p>
+                <p class="c-txtsp">ツイートの内容がここに入ります</p>
+                <p class="c-txtsp">ツイートの内容がここに入ります</p>
+            </div>
+        </div>
+        <div class="tab_content" id="programming_content">
+            <div class="tab_content_description">
+                <p class="c-txtsp">Live情報の内容がここに入ります</p>
+                <p class="c-txtsp">Live情報の内容がここに入ります</p>
+                <p class="c-txtsp">Live情報の内容がここに入ります</p>
+                <p class="c-txtsp">Live情報の内容がここに入ります</p>
+                <p class="c-txtsp">Live情報の内容がここに入ります</p>
+                <p class="c-txtsp">Live情報の内容がここに入ります</p>
+            </div>
+        </div>
+        <div class="tab_content" id="design_content">
+            <div class="tab_content_description">
+                <p class="c-txtsp">販促の内容がここに入ります</p>
+            </div>
+        </div>
+    </div>
+
+<!--関係者リンクのスライダー-->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img_src/1500x500.jpg"></div>
+        <div class="swiper-slide"><img src="img_src/1500x500.jpg"></div>
+        <div class="swiper-slide"><img src="img_src/1500x500.jpg"></div>
+        <div class="swiper-slide"><img src="img_src/1500x500.jpg"></div>
+        <div class="swiper-slide"><img src="img_src/gyouza.gif"></div>
+        <div class="swiper-slide"><img src="img_src/dc.png"></div>
+        <div class="swiper-slide"><img src="img_src/peco.jpg"></div>
+        <div class="swiper-slide"><img src="img_src/Parka holic.jpg"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        slidesPerView: 3,
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+})
+</script>
+<!--簡易プロフィール-->
+<div class="profile_bottom">
+    <div id="profile_left"><img src="img_src/color_up.png"></div>
+    <div id="profile_right">
+        <p>兵庫県豊岡市出身。<br>
+            Acoustic Guitarist あなたの心に響く音楽を。<br>
+            毎月第三水曜日に「7's code」という定期ワンマンライブを神戸で開催！<br>
+            フィンガーピッキングコンテスト2010全国大会で優秀賞受賞。
+        </p>
+    </div>
+</div>
+<!--フッター-->
+<footer class="footer">
+    <button>サイトのご利用にあたって</button>
+    <button>個人情報の取扱いについて</button>
+    <button>お仕事の依頼・相談について</button>
+</footer>
+</body>
+</html>
